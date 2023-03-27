@@ -7,6 +7,26 @@ const magazines = [
   { id: 3, title: 'Communication Arts', theme: 'design', isAvailable: false },
 ];
 
+function Intro() {
+  return (
+  <div>
+    <h3>My Saturday</h3>
+    <p>Satruday I attended a charity event called Gamers for Giving at EMU. There was a Smash Brother Ultimate tournamant happening there called Phoenix Down, and I had a lot of friends, including myself,  wanted to go. It was a lot of fun and I competed very well all things considered.</p>
+    <img
+        className="stageView"
+        src="https://cdn.sanity.io/images/mnmuyuld/production/381aee9ec50237768a4c956af3f35935f5000207-1024x683.jpg?w=840&q=90&fit=max&auto=format"
+        alt={book.title + ' cover'}
+        style={{
+          width: book.width,
+          height: book.height
+        }}
+      />
+  </div>
+  )
+}
+
+
+
 function ZineRack() {
   const listZines = magazines.map(zine =>
     <li
@@ -27,7 +47,7 @@ const book = {
   title: 'A Farewell to Arms',
   author: 'Earnest Hemingway',
   published: '1929',
-  image: 'https://upload.wikimedia.org/wikipedia/en/4/48/Hemingway_farewell.png',
+  image: logo,
   width: '264',
   height: '378'
 };
@@ -71,6 +91,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Intro  />
         <ZineRack />
         <Bookshelf />
       </header>
