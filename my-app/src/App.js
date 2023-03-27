@@ -31,12 +31,13 @@ function Intro() {
 }
 
 const experience = [
-  { id: 1, title: 'Overall Fun', theme: 'architecture', isAvailable: true },
-  { id: 2, title: 'Smell', theme: 'design', isAvailable: true },
-  { id: 3, title: 'Air Conditioning', theme: 'architecture', isAvailable: true },
-  { id: 4, title: 'Wifi Connection', theme: 'design', isAvailable: true },
-  { id: 5, title: 'Cost', theme: 'architecture', isAvailable: false },
-  { id: 6, title: 'Food Options by Walking', theme: 'design', isAvailable: false },
+  { id: 1, title: 'Overall Fun', theme: 'all', isAvailable: true },
+  { id: 2, title: 'Size of the Space', theme: 'enviroment', isAvailable: true },
+  { id: 2, title: 'Smell', theme: 'enviroment', isAvailable: true },
+  { id: 3, title: 'Air Conditioning', theme: 'enviroment', isAvailable: true },
+  { id: 4, title: 'Wifi Connection', theme: 'amenities', isAvailable: true },
+  { id: 5, title: 'Cost', theme: 'registration', isAvailable: false },
+  { id: 6, title: 'Food Options by Walking', theme: 'amenities', isAvailable: false },
 ];
 
 function MyExperience() {
